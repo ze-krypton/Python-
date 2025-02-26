@@ -1,0 +1,5 @@
+Yes! ✅ If a function returns a value instead of printing it, 
+then you need to wrap the function call inside print() to display the output.
+
+Yes, exactly! ✅ If a function already prints the output inside it, 
+you do not need to wrap the function call inside print().
