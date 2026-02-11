@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Overlapping Images</title>
+<style>
+  .container {
+    position: relative;
+    width: 335px; 
+    height: 335px; 
+    border: 1px solid #ccc;
+  }
+  .container img {
+    position: absolute;
+    width: 110px;
+    height: 110px; 
+    border: 1px solid black;
+    background-color: white;
+    padding: 0px;
+  }
+
+  .img1 {
+    top: 10;
+    left: 0;
+  }
+  .img2 {
+    top: 110px;   
+    left: 110.5px;  
+  }
+  .img3 {
+    top: 220px;  
+    left: 220px;  
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://imgs.search.brave.com/Bwvk8wikJjEi4_URxD72Ie01tmXUe4c4tC1pxmKVQA0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2lu/Y29uc2lzdGVudGx5/LWFkbWlyYWJsZS9p/bWFnZXMvMi8yMS9K/aW1teUhvcGtpbnMu/cG5nL3JldmlzaW9u/L2xhdGVzdC9zY2Fs/ZS10by13aWR0aC1k/b3duLzI2OD9jYj0y/MDI0MDEwOTIzNDcw/Mw" alt="Image 1" class="img1">
+  <img src="https://imgs.search.brave.com/Bwvk8wikJjEi4_URxD72Ie01tmXUe4c4tC1pxmKVQA0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2lu/Y29uc2lzdGVudGx5/LWFkbWlyYWJsZS9p/bWFnZXMvMi8yMS9K/aW1teUhvcGtpbnMu/cG5nL3JldmlzaW9u/L2xhdGVzdC9zY2Fs/ZS10by13aWR0aC1k/b3duLzI2OD9jYj0y/MDI0MDEwOTIzNDcw/Mw" alt="Image 2" class="img2">
+  <img src="https://imgs.search.brave.com/Bwvk8wikJjEi4_URxD72Ie01tmXUe4c4tC1pxmKVQA0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2lu/Y29uc2lzdGVudGx5/LWFkbWlyYWJsZS9p/bWFnZXMvMi8yMS9K/aW1teUhvcGtpbnMu/cG5nL3JldmlzaW9u/L2xhdGVzdC9zY2Fs/ZS10by13aWR0aC1k/b3duLzI2OD9jYj0y/MDI0MDEwOTIzNDcw/Mw" alt="Image 3" class="img3">
+</div>
+
+</body>
+</html>

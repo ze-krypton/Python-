@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Two Row Frames with Two Columns in Second Row</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 1;
+  }
+  body {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .row1 {
+    flex: 1;
+    background-color: #ff9999; 
+  }
+
+  .row2 {
+    flex: 1;
+    display: flex;
+  }
+
+  .col {
+    flex: 1;
+  }
+  .col1 {
+    background-color: #99ccff; 
+  }
+  .col2 {
+    background-color: #99ff99; 
+  }
+ 
+</style>
+</head>
+<body>
+
+  <div class="row1">
+
+  </div>
+
+  <div class="row2">
+    <div class="col col1">
+
+    </div>
+    <div class="col col2">
+ 
+    </div>
+  </div>
+
+</body>
+</html>
