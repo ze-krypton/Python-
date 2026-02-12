@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Name</title>
+  <script>
+    function openWelcomePage() {
+
+      const name = document.getElementById('name').value;
+
+      window.open('w5q6b.html?name=' + encodeURIComponent(name), '_blank');
+    }
+
+    function resetName() {
+  
+      document.getElementById('name').value = '100';
+    }
+  </script>
+</head>
+<body>
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name" value="victoria" />
+
+  <button type="button" onclick="openWelcomePage()">Enter</button>
+  <button type="button" onclick="resetName()">Reset</button>
+</body>
+</html>
