@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Message</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <script>
+        var wantsGreeting = confirm("Do you want a greeting message?");
+
+        if (wantsGreeting) {
+            document.write('<div style="text-align:center; margin-top:50px; font-family:Arial;">');
+            document.write('<img src="Welcome.gif" alt="Welcome"><br><br>');
+            document.write('<h1>Welcome to Department of Computer Science!</h1>');
+            document.write('</div>');
+        } else {
+            document.write('<div style="text-align:center; margin-top:100px; font-family:Arial;">');
+            document.write('<h2>Thank you for visiting!</h2>');
+            document.write('</div>');
+        }
+    </script>
+</body>
+</html>

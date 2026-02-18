@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Page 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body>
+    <h1>ABC.COM</h1>
+    <h2 id="greeting"></h2>
+
+    <script>
+        // Get the username from the URL query string
+        var params = new URLSearchParams(window.location.search);
+        var name = params.get("username");
+        document.getElementById("greeting").textContent = "Hello, " + name + "! Welcome to ABC.COM";
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Welcome</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+        input[type="button"] { padding: 10px 25px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to ABC.COM</h1>
+    <p>ABC.COM is a leading technology company providing innovative solutions<br>
+       in web development, cloud computing, and digital transformation.<br>
+       We are dedicated to delivering excellence to our customers worldwide.</p>
+
+    <form action="w6q6_page3.html" method="GET">
+        <input type="hidden" name="username" id="hiddenName">
+        <input type="submit" value="Next">
+    </form>
+
+    <script>
+        // Get the username from the URL query string and pass it to the hidden field
+        var params = new URLSearchParams(window.location.search);
+        var name = params.get("username");
+        document.getElementById("hiddenName").value = name;
+    </script>
+</body>
+</html>
