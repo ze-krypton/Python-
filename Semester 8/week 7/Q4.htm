@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Multiplication Table (1-10)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>x</th>
+                <!-- Table headers for numbers 1 to 10 -->
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JavaScript will insert rows here -->
+        </tbody>
+    </table>
+
+    <script>
+      const tbody=document.querySelector('tbody');
+
+      for(let i =1;i<=10;i++){
+         let row = '<tr>';
+         row += `<th>${i}</th>`;  //row header
+        for(let j=1;j<=10;j++){
+            row += `<td>${i * j}</td>`;
+        }
+        row+="</td>"
+        tbody.innerHTML +=row;
+      }
+    </script>
+
+
+
+
+</body>
+</html>

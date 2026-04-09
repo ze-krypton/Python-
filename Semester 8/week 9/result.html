@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<style>
+body{font-family:Arial;text-align:center;margin-top:50px}
+</style>
+</head>
+<body>
+
+<h2>Submitted Data</h2>
+<p id="output"></p>
+
+<script>
+let p=new URLSearchParams(window.location.search);
+document.getElementById("output").innerHTML=
+"Name: "+p.get("name")+"<br>"+
+"Age: "+p.get("age")+"<br>"+
+"Email: "+p.get("email");
+</script>
+
+</body>
+</html>
