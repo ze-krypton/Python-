@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Calendar</h2>
+
+<select id="month"></select>
+<select id="year"></select>
+<button onclick="showCalendar()">Show Days</button>
+
+<div id="calendar" style="margin-top:10px;font-weight:bold;"></div>
+
+<script>
+let monthSelect = document.getElementById("month");
+let yearSelect = document.getElementById("year");
+
+for(let i=0; i<12; i++){
+    monthSelect.innerHTML += `<option value=${i}>${i+1}</option>`;
+}
+
+for(let i=2000; i<=2030; i++){
+    yearSelect.innerHTML += `<option value=${i}>${i}</option>`;
+}
+
+function showCalendar() {
+    let month = parseInt(monthSelect.value);
+    let year = parseInt(yearSelect.value);
+    let daysInMonth = new Date(year, month+1, 0).getDate();
+    let out = "";
+    const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    for(let i=1; i<=daysInMonth; i++){
+        let d = new Date(year, month, i);
+        out += i + " (" + days[d.getDay()] + ")<br>";
+    }
+    document.getElementById("calendar").innerHTML = out;
+}
+</script>
+</body>
+</html>
