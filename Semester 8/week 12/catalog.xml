@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students>
+
+  <student id="101">
+    <name>Amit</name>
+    <course>BCA</course>
+    <marks>85</marks>
+  </student>
+
+  <student id="102">
+    <name>Riya</name>
+    <course>BSc</course>
+    <marks>90</marks>
+  </student>
+
+  <student id="103">
+    <name>Rahul</name>
+    <course>BCom</course>
+    <marks>78</marks>
+  </student>
+
+</students>

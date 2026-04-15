@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<students>
+  <student>
+    <name>Yash</name>
+    <course>BCA</course>
+    <marks>10</marks>
+  </student>
+  <student>
+    <name>Ahmed</name>
+    <course>BCA</course>
+    <marks>20</marks>
+  </student>
+  <student>
+    <name>Zaid</name>
+    <course>BCA</course>
+    <marks>90</marks>
+  </student>
+</students>

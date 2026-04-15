@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style4.css"?>
+
+<bookstore>
+  <book>
+    <title>Python Basics</title>
+    <author>John</author>
+    <price>500</price>
+  </book>
+  <book>
+    <title>Web Design</title>
+    <author>David</author>
+    <price>400</price>
+  </book>
+</bookstore>

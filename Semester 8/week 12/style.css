@@ -1,0 +1,4 @@
+students { display:block; font-family:Arial; }
+student { display:block; margin:10px; border:1px solid black; padding:10px; }
+name { color:red; font-weight:bold; display:block; }
+course, marks { display:block; }
